@@ -13,53 +13,104 @@
         <META http-equiv="Content-Type" content="text/html; charset=utf-8">
         </head>
         <body>
-         <div>
+            <!doctype html>
+            <html lang="en">
             
-                <div>
-                    <div>
-                        
-                        <h1>Pavan Kamjula</h1>
-                    </div>
-                    
-                    <ul>
-                            <a href="index.html" target="index.html">Home</a>|
-                            <a href="#" target="contact.html">CONTACT</a>|
-                            <a href="cal.html" target="cal.html">Calculator</a>|
-                        </ul>
-                    
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+              <title>Grocery Estimator</title>
+            
+              <meta name="description" content="Given items per bag and number of bags, calculate total number of items">
+              <meta name="author" content="Pavan Sai Kumar Reddy Kamjula">
+            
+              <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+            
+              <!-- Font Awesome -->
+              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+              <!-- Bootstrap core CSS -->
+              <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+              <!-- Material Design Bootstrap -->
+              <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+            
+              <!-- required for sticky footer -->
+              <style>
+                body,
+                .sticky-footer-wrapper {
+                  min-height: 100vh;
+                }
+              </style>
+            
+            </head>
+            
+            <body class="d-flex flex-column sticky-footer-wrapper">
+              <!-- Bootstrap container or container-fluid (whole width) -->
+              <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
+              <!-- margin top 5 ($spacer * 3) -->
+              <main class="container mt-5 flex-fill">
+            
+                <!--Container has rows - first row -->
+                <div class="row">
+            
+                  <!--Rows have columns - column 1 (7/12) -->
+                  <div class="col-md-7 mb-4">
+            
+                    <h2>Interactive app!</h2>
+                    <hr>
+            
+                    <fieldset class="mt-4">
+                      <label for="firstNumber">itemsPerBag</label>
+                      <input id="firstNumber" type="number" >
+                      <span id="firstWarning" class="text-danger"></span>
+                    </fieldset>
+            
+                    <fieldset class="mt-4">
+                      <label for="secondNumber">bags</label>
+                      <input id="secondNumber" type="number" >
+                      <span id="secondWarning" class="text-danger"></span>
+                    </fieldset>
+                          
+            
+                  </div>
+                  <!--end column 1-->
+            
+                  <!--column 2 (5/12) -->
+                  <div class="col-md-5 mb-4">
+                    <h2>Try these:</h2>
+                    <hr>
+                    <button id="addButton" class="btn btn-primary">Itemsinbags</button>
+                    <hr>
+                    <p id="result"></p>
+            
+                  </div>
+                  <!-- end column 2-->
+            
                 </div>
+                <!-- end row 1 -->
             
-            <div>
+              </main>
             
-                
-                <div></div> <div></div>
-                        <div>
-                            
-                            <form target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
-                                <h1> Enter two numbers</h1>
-                                <p><label>First Number: </label><input id="first" type="number"></p>
-                                <p><label>Second Number</label><input id="second" type="number"></p>
-                                <p><label>Output</label><input id="output" type="number"></p>
-                                <input type="button" value="Add" onclick="add">
-                                <input type="button" value="Sub" onclick="sub">
-                                <input type="button" value="Mul" onclick="mul">
-                            </form>
-                        </div>
-                    
-    
+              <!-- sticky footer with padding on y-axis (top and bottom) -->
+              <footer class="footer mt-auto py-3 bg-light">
+                <div class="container">
+                  <span class="text-muted">Right-click / Inspect / Console</span>
+                  &#9670;
+                  <a href="https://profcase.github.io/js-gui/">Demo</a>
+                  &#9670;
+                  <a href="https://github.com/profcase/js-gui">Source</a>
+                </div>
+              </footer>
             
-            <div></div>	
-            </div>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+              <script src="main.js"></script>
             
+            </body>
             
-                    <div>
-<a href = "https://github.com/pavanreddy4227"><img src="images/git.jpg" width=50 height=50 ></a>
-
-                            
-                            
-                    </div>
-                
-        </div>
-    
+            </html>
+            
     </body></html>
     

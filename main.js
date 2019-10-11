@@ -6,8 +6,12 @@ const updateWithAdd = async (event) => {
   
     const i = parseInt(document.querySelector('#firstNumber').value)
     const j = parseInt(document.querySelector('#secondNumber').value)
-    const ans = i*j;
-    document.querySelector('#result').innerHTML = "Itemsinbags:"+ans
+    const ans = i+j;
+    const ans1=i-j;
+    const ans2=i*j;
+    document.querySelector('#result').innerHTML = "Sum is:"+ans+"\n"+ "Subraction is:"+ans1+"\n"+" multiplication is:"+ans2
+   // document.querySelector('#result').innerHTML = "Difference is:"+ans1
+   // document.querySelector('#result').innerHTML = "Multiple is:"+ans2
   }
   
 }

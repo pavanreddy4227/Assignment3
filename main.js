@@ -8,8 +8,8 @@ const updateWithAdd = async (event) => {
     const i = parseInt(document.querySelector('#firstNumber').value)
     const j = parseInt(document.querySelector('#secondNumber').value)
     const ans =`Sum is ${add(i,j)}.`
-    const ans1 =`difference is ${sub(i,j)}.`
-    const ans2 =`mul is ${mul(i,j)}.`
+    const ans1 =`\ndifference is ${sub(i,j)}.`
+    const ans2 =`\nmul is ${mul(i,j)}.`
     document.querySelector('#result').innerHTML = ans+"\n"+ans1+"\n"+ans2
    // document.querySelector('#result').innerHTML = "Difference is:"+ans1
    // document.querySelector('#result').innerHTML = "Multiple is:"+ans2
